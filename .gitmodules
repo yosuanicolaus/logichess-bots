@@ -1,0 +1,3 @@
+[submodule "logichess"]
+	path = logichess
+	url = https://github.com/yosuanicolaus/logichess

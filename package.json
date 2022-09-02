@@ -1,0 +1,22 @@
+{
+  "name": "logichess-bots",
+  "version": "1.0.0",
+  "description": "chess bot algorithms for LogiChess",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosuanicolaus/logichess-bots.git"
+  },
+  "author": "Yosua Nicolaus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuanicolaus/logichess-bots/issues"
+  },
+  "homepage": "https://github.com/yosuanicolaus/logichess-bots#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.14"
+  }
+}
