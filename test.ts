@@ -1,14 +1,7 @@
+import { Bot } from "./src/bot";
 import { Chess } from "./logichess/dist/chess";
 
-const t1 = Date.now();
-let a;
+const c = new Chess();
+const b = new Bot(c, "alphabet");
 
-a = new Chess();
-a = new Chess();
-a = new Chess();
-a = new Chess();
-a = new Chess();
-
-const t2 = Date.now();
-
-console.log(t2 - t1, "ms");
+console.log(b.move);

@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Random = void 0;
+exports.Alphabet = void 0;
 const algorithm_1 = require("../algorithm");
-const utils_1 = require("../utils");
-class Random extends algorithm_1.Algorithm {
+class Alphabet extends algorithm_1.Algorithm {
     constructor(chess) {
         super(chess);
     }
     getMove() {
         const moves = this.chess.data.moves;
-        return (0, utils_1.getRandomMove)(moves);
+        moves.sort((moveA, moveB) => moveA.san.localeCompare(moveB.san));
+        return moves[0];
     }
 }
-exports.Random = Random;
+exports.Alphabet = Alphabet;

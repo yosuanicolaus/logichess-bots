@@ -1,9 +1,10 @@
 import { Chess } from "../logichess/dist/chess";
 import { Move } from "../logichess/dist/move";
 import { Algorithm } from "./algorithm";
+import { Alphabet } from "./algorithms/alphabet";
 import { Random } from "./algorithms/random";
 
-type AlgoChoice = "random";
+type AlgoChoice = "random" | "alphabet";
 
 export class Bot {
   chess: Chess;
@@ -22,6 +23,8 @@ export class Bot {
     switch (algorithm) {
       case "random":
         return new Random(this.chess);
+      case "alphabet":
+        return new Alphabet(this.chess);
       default:
         throw new Error("algorithm not found!");
     }
