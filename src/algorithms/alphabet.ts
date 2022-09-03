@@ -7,8 +7,9 @@ export class Alphabet extends Algorithm {
   }
 
   getMove() {
-    const moves = this.chess.data.moves;
-    moves.sort((moveA, moveB) => moveA.san.localeCompare(moveB.san));
-    return moves[0];
+    this.moves.sort((moveA, moveB) => {
+      return moveA.san.localeCompare(moveB.san);
+    });
+    return this.moves[0];
   }
 }

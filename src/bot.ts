@@ -3,8 +3,9 @@ import { Move } from "../logichess/dist/move";
 import { Algorithm } from "./algorithm";
 import { Alphabet } from "./algorithms/alphabet";
 import { Random } from "./algorithms/random";
+import { Shortest } from "./algorithms/shortest";
 
-type AlgoChoice = "random" | "alphabet";
+type AlgoChoice = "random" | "alphabet" | "shortest";
 
 export class Bot {
   chess: Chess;
@@ -25,6 +26,8 @@ export class Bot {
         return new Random(this.chess);
       case "alphabet":
         return new Alphabet(this.chess);
+      case "shortest":
+        return new Shortest(this.chess);
       default:
         throw new Error("algorithm not found!");
     }

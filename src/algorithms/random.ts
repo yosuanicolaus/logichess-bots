@@ -8,7 +8,6 @@ export class Random extends Algorithm {
   }
 
   getMove() {
-    const moves = this.chess.data.moves;
-    return getRandomMove(moves);
+    return getRandomMove(this.moves);
   }
 }
