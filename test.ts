@@ -1,8 +1,7 @@
 import { Bot } from "./src/bot";
 import { Chess } from "./logichess/dist/chess";
-import { getMoveDistance } from "./src/utils";
 
 const c = new Chess();
-const b = new Bot(c, "shortest");
+const b = new Bot(c, "longest");
 
 console.log(b.move);
