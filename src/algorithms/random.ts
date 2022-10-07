@@ -1,4 +1,4 @@
-import { Chess } from "../../logichess/dist/chess";
+import { Chess } from "logichess/dist/chess";
 import { Algorithm } from "../algorithm";
 import { getRandomMove } from "../utils";
 
