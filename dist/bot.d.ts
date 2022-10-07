@@ -1,7 +1,7 @@
-import { Chess } from "../logichess/dist/chess";
-import { Move } from "../logichess/dist/move";
+import { Chess } from "logichess/dist/chess";
+import { Move } from "logichess/dist/move";
 import { Algorithm } from "./algorithm";
-declare type AlgoChoice = "random" | "alphabet";
+declare type AlgoChoice = "random" | "alphabet" | "shortest" | "longest";
 export declare class Bot {
     chess: Chess;
     algorithm: AlgoChoice;

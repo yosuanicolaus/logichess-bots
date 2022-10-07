@@ -1,15 +1,25 @@
 {
   "name": "logichess-bots",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "chess bot algorithms for LogiChess",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/esm/wrapper.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/esm/wrapper.js"
+  },
   "scripts": {
-    "test": "ts-node test"
+    "test": "ts-node test",
+    "build": "rm -fr dist/* && tsc && ./build.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yosuanicolaus/logichess-bots.git"
   },
+  "keywords": [
+    "chess",
+    "bot"
+  ],
   "author": "Yosua Nicolaus",
   "license": "MIT",
   "bugs": {

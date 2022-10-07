@@ -7,9 +7,10 @@ class Alphabet extends algorithm_1.Algorithm {
         super(chess);
     }
     getMove() {
-        const moves = this.chess.data.moves;
-        moves.sort((moveA, moveB) => moveA.san.localeCompare(moveB.san));
-        return moves[0];
+        this.moves.sort((moveA, moveB) => {
+            return moveA.san.localeCompare(moveB.san);
+        });
+        return this.moves[0];
     }
 }
 exports.Alphabet = Alphabet;

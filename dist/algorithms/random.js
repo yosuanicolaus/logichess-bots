@@ -8,8 +8,7 @@ class Random extends algorithm_1.Algorithm {
         super(chess);
     }
     getMove() {
-        const moves = this.chess.data.moves;
-        return (0, utils_1.getRandomMove)(moves);
+        return (0, utils_1.getRandomMove)(this.moves);
     }
 }
 exports.Random = Random;

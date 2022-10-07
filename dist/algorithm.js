@@ -4,6 +4,7 @@ exports.Algorithm = void 0;
 class Algorithm {
     constructor(chess) {
         this.chess = chess;
+        this.moves = chess.data.moves;
     }
 }
 exports.Algorithm = Algorithm;
