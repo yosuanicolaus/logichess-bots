@@ -1,2 +1,3 @@
 import { Bot } from "./bot";
-export { Bot };
+import { BotAlgorithm } from "./bot";
+export { Bot, BotAlgorithm };

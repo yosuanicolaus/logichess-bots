@@ -6,22 +6,22 @@ import { Longest } from "./algorithms/longest";
 import { Random } from "./algorithms/random";
 import { Shortest } from "./algorithms/shortest";
 
-type AlgoChoice = "random" | "alphabet" | "shortest" | "longest";
+export type BotAlgorithm = "random" | "alphabet" | "shortest" | "longest";
 
 export class Bot {
   chess: Chess;
-  algorithm: AlgoChoice;
+  algorithm: BotAlgorithm;
   bot: Algorithm;
   move: Move;
 
-  constructor(chess: Chess, algorithm: AlgoChoice) {
+  constructor(chess: Chess, algorithm: BotAlgorithm) {
     this.chess = chess;
     this.algorithm = algorithm;
     this.bot = this.getBot(algorithm);
     this.move = this.bot.getMove();
   }
 
-  private getBot(algorithm: AlgoChoice) {
+  private getBot(algorithm: BotAlgorithm) {
     switch (algorithm) {
       case "random":
         return new Random(this.chess);

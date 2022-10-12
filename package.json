@@ -1,6 +1,6 @@
 {
   "name": "logichess-bots",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "chess bot algorithms for LogiChess",
   "main": "dist/index.js",
   "module": "dist/esm/wrapper.js",
